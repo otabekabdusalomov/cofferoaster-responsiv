@@ -1,0 +1,147 @@
+/* COLLECTION SECTION */
+
+.collection{
+  padding-top: 68px;
+  /* padding-bottom: 68px */
+  // background-image: url(../images/collection-back.png);
+  // background-size: 1120px 200px;
+  // background-repeat: no-repeat;
+  // background-position: top center;
+  padding-bottom: 100px;
+
+  &__container{
+    background-image: url(../images/collection-back.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  &__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 130px;
+    list-style-type: none;
+  }
+
+  &__item:nth-child(even){
+    margin: 0 30px;
+  }
+
+  &__img{
+    margin-bottom: 72px;
+  }
+
+  &__info-box{
+    width: 255px;
+    text-align: center;
+  }
+
+  &__name{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fraunces';
+    /* margin-bottom: 24px; */
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #333D4B;
+  }
+
+  &__desc{
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #333D4B;
+  }
+}
+
+
+@media only screen and (max-width: 1140px){
+
+  .collection{
+    padding-top: 25px;
+
+    &__container{
+      background-size: contain;
+    }
+
+    &__list{
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__item:nth-child(even){
+      margin: 32px 0;
+    }
+
+    &__img{
+      margin: 0;
+      margin-right: 36px;
+    }
+
+    &__info-box{
+      text-align: left;
+    }
+
+    &__desc{
+      text-align: left;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .collection{
+
+
+    &__container{
+      background-size: contain;
+    }
+
+    .collection__list{
+      padding-top: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 510px){
+
+  .collection{
+    padding-bottom: 40px;
+
+    &__list{
+      padding-top: 60px;
+      flex-direction: column;
+    }
+
+    &__item{
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__info-box{
+      text-align: center;
+    }
+
+    &__desc{
+      text-align: center;
+    }
+  }
+}

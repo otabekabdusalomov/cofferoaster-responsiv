@@ -1,0 +1,245 @@
+// HOW IT WORKS
+
+.working{
+
+  &__container{
+    padding: 150px 85px 100px 85px;
+  }
+
+  &__heading{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 80px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+  }
+
+  &__img-line{
+    width: 900px;
+    height: 45px;
+    margin-bottom: 67px;
+  }
+
+  &__list-wrapper{
+    margin-bottom: 64px;
+  }
+
+  &__list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item + &__item{
+    margin-left: 95px;
+  }
+
+  &__order-number{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 38px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FDD6BA;
+  }
+
+  &__name{
+    margin: 0;
+    padding: 0;
+    // max-width: 255px;
+    margin-bottom: 42px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+  }
+
+  &__desc{
+    margin: 0;
+    padding: 0;
+    // max-width: 285px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+  }
+}
+
+@media only screen and (max-width: 1215px){
+
+  .working{
+
+    &__img-line{
+      width: 815px;
+      height: 38px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1110px){
+
+  .working{
+
+    &__img-line{
+      width: 750px;
+      height: 35px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1030px){
+
+  .working{
+
+    &__img-line{
+      width: 720px;
+      height: 35px;
+    }
+  }
+}
+
+@media only screen and (max-width: 940px){
+  .working{
+
+
+    &__container{
+      padding: 0 20px;
+      padding-top: 350px;
+    }
+  }
+}
+
+@media only screen and (max-width: 860px){
+
+  .working{
+
+    &__img-line{
+      width: 660px;
+    }
+  }
+}
+
+// General part
+@media only screen and (max-width: 770px){
+
+  .working{
+
+    &__heading{
+      text-align: center;
+    }
+
+    &__img-line{
+      display: none;
+    }
+
+    &__list{
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+    }
+
+    &__item{
+      margin: 0;
+      padding: 0;
+      max-width: 700px;
+      align-items: center;
+    }
+
+    &__item + &__item{
+      margin: 0;
+      margin-top: 56px;
+    }
+
+    &__name{
+      display: flex;
+      width: 80%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    &__desc{
+      display: inline-block;
+      width: 80%;
+      text-align: center;
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    &__btn{
+      display: flex;
+      max-width: 217px;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 530px) {
+
+  .working{
+
+    &__container{
+      padding-top: 600px;
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+
+  .working{
+
+    &__container{
+      padding-top: 700px;
+    }
+  }
+}
+
+@media only screen and (max-width: 390px){
+
+  .working{
+
+    &__container{
+      padding-top: 750px;
+    }
+  }
+}
+
+@media only screen and (max-width: 370px){
+
+  .working{
+
+    &__container{
+      padding-top: 800px;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px){
+
+  .working{
+
+    &__container{
+      padding-top: 900px;
+    }
+  }
+}

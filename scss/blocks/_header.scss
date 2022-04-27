@@ -1,0 +1,134 @@
+// HEADER SECTION - Bu yerda header styles joylashgan
+
+.header{
+
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 43px 20px 22px 20px;
+    align-items: center;
+  }
+
+  &__logo{
+    flex-shrink: 0;
+  }
+
+  &__nav{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  &__nav-list{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__nav-item:nth-child(2){
+    margin: 0 33px;
+  }
+
+  &__nav-link{
+    text-decoration: none;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+    transition: 0.2s;
+  }
+
+  &__hamburger{
+    display: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    background-image: url("../images/icon-menu.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__hamburger:active{
+    opacity: 0.6;
+  }
+
+}
+
+
+// HOME PAGE TABLET VERSION
+
+@media only screen and (max-width: 768px) {
+
+
+}
+
+@media only screen and (max-width: 600px){
+
+  .header{
+    position: relative;
+
+    &__container{
+      padding-top: 20px;
+    }
+
+    &__logo{
+      width: 163px;
+      height: 18px;
+    }
+
+    &__nav{
+      display: none;
+    }
+
+    &__hamburger{
+      display: inline-block;
+    }
+  }
+
+  .header--open .header__nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .header--open .header__nav-list{
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+  }
+
+  .header--open .header__nav-link{
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #333D4B;
+  }
+
+  .header--open .header__nav-item:nth-child(2n){
+    margin: 32px 0;
+  }
+
+  .header--open .header__hamburger{
+      background-image: url("../../images/icon-menu-x.svg");
+      background-size: 20px 20px;
+    }
+  }
